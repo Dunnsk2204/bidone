@@ -124,6 +124,8 @@ tests/
 | **Parallel workers** | With a real database, increase workers for faster feedback |
 | **Contract testing** | Validate every response against the OpenAPI spec at `/openapi.json` using Spectral or Schemathesis |
 | **`data-testid` coverage** | Some selectors fall back to ARIA roles — adding testids to remaining elements would make selectors more stable |
+| **Data-driven testing** | Externalise test data into JSON or CSV fixtures and use Playwright's `test.each()` to run the same test logic across multiple data sets. For example, the registration validation tests currently have one scenario per test — with `test.each()` a single test could cover valid email, missing email, invalid format, and missing password in one parameterised block. This reduces duplication and makes adding new scenarios easy and maintainable. |
+
 
 ---
 
