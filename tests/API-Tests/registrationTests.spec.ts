@@ -1,7 +1,7 @@
 import { test, expect, uniqueEmail, DEFAULT_PASSWORD } from '../Fixtures';
 import type { AuthResponse, ErrorResponse } from '../Fixtures/types';
 
-test.describe('@RegisterAPITests @SmokeTests', () => {
+test.describe('@RegisterAPITests @SmokeAPITests', () => {
   test('valid registration returns 201 with a token and user object', async ({ apiClient }) => {
     const payload = {
       email: uniqueEmail('register'),

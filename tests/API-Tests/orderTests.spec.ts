@@ -1,20 +1,3 @@
-/**
- * api/orders.spec.ts
- *
- * Risk-based coverage for the Orders endpoints.
- *
- * Scenarios (5):
- *  1. POST /orders → 201, status is CONFIRMED, cart is emptied
- *  2. Stock is decremented on the ordered product
- *  3. POST /orders with an empty cart → 400
- *  4. GET /orders/:id → returns the correct order
- *  5. GET /orders/:id with unknown id → 404
- *
- * Order placement has two critical side-effects: emptying the cart and
- * decrementing stock. Either failing silently = overselling or phantom
- * cart items — the highest-risk data-integrity bugs in the app.
- */
-
 import { Order, OrderItem, OrdersResponse, Product } from 'Fixtures/types';
 import { test, expect } from '../Fixtures';
 

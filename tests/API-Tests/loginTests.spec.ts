@@ -1,7 +1,7 @@
 import { test, expect, uniqueEmail, DEFAULT_PASSWORD } from '../Fixtures';
 import type { AuthResponse, ErrorResponse } from '../Fixtures/types';
 
-test.describe('@LoginAPITests @SmokeTests', () => {
+test.describe('@LoginAPITests @SmokeAPITests', () => {
   test('wrong password returns 401', async ({ apiClient }) => {
     const email = uniqueEmail('login-fail');
 
