@@ -34,6 +34,10 @@ git clone https://github.com/Dunnsk2204/bidone.git
 ```
 
 ```bash
+git checkout master
+```
+
+```bash
 cd bidone/tests
 ```
 
