@@ -1,0 +1,20 @@
+{
+  "name": "bidshop-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API and UI test suite for Bidshop – Bidfood SDET exercise",
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test --project=api",
+    "test:ui": "playwright test --project=ui",
+    "test:headed": "playwright test --project=ui --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "install:browsers": "playwright install chromium --with-deps"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.0",
+    "typescript": "^5.4.5"
+  }
+}
