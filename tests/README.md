@@ -53,7 +53,7 @@ npx playwright install chromium
 
 ## Step 3 — Run the tests
 
-NOTE: The frontend and backend services do not need starting seperately. As long as the bidshop and bidone (test app), are within the same folder, the frontend and backend servers will spin up automatically.
+NOTE: The frontend and backend services do not need starting seperately. As long as the bidshop and bidone (test app), are within the same folder i.e (Desktop), the frontend and backend servers will spin up automatically, via the webserver in playwright.config.ts
 
 ```bash
 npx playwright test
@@ -108,7 +108,7 @@ tests/
 
 **Risk-based test selection** — Tests were chosen by risk-factor. I have developed a Smoke Test, covering key areas of the application, such as customer flows and validation.
 
-**API tests do the heavy lifting** — The API tests business logic, financial calculations, auth enforcement, and data integrity are all validated at the API level. UI tests focus on user journeys and are intentionally small.
+**API tests do the heavy work** — The API tests business logic, financial calculations, authentication enforcement, and data integrity are all validated at the API level. UI tests focus on user journeys and are intentionally small.
 
 **Test isolation** — Each test will get a freshly registered user from the `authedUser` fixture with a unique timestamped email. No teardown is needed and no shared state between tests.
 
@@ -149,7 +149,7 @@ This is not a broken test — it is a genuine bug in the app
 
 ### Incorrect GST calculation
 
-The API calculates GST at approximately 12.48% rather than the specified 15%.
+The API calculates GST at approximately 12.48% rather than the specified 15%
 
 | | Value |
 |---|---|
