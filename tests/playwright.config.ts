@@ -21,17 +21,17 @@ export default defineConfig({
   webServer: [
     {
       command: 'npm run dev',
-      cwd: '../backend',
+      cwd: '../../bidshopNew/backend',
       url: `${API_URL}/health`,
       reuseExistingServer: !process.env.CI,
-      timeout: 120_000,
+      timeout: 60000,
     },
     {
       command: 'npm run dev',
-      cwd: '../frontend',
+      cwd: '../../bidshopNew/frontend',
       url: UI_URL,
       reuseExistingServer: !process.env.CI,
-      timeout: 120_000,
+      timeout: 60000,
     },
   ],
 
@@ -44,14 +44,14 @@ export default defineConfig({
   projects: [
     {
       name: 'api',
-      testMatch: 'api/**/*.spec.ts',
+      testMatch: 'API-Tests/**/*.spec.ts',
       use: {
         baseURL: API_URL,
       },
     },
     {
       name: 'ui',
-      testMatch: 'ui/**/*.spec.ts',
+      testMatch: 'UI-Tests/**/*.spec.ts',
       use: {
         ...devices['Desktop Chrome'],
         baseURL: UI_URL,

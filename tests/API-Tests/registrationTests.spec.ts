@@ -1,5 +1,5 @@
-import { test, expect, uniqueEmail, DEFAULT_PASSWORD } from '../fixtures';
-import type { AuthResponse, ErrorResponse } from '../fixtures/types';
+import { test, expect, uniqueEmail, DEFAULT_PASSWORD } from '../Fixtures';
+import type { AuthResponse, ErrorResponse } from '../Fixtures/types';
 
 test.describe('@RegisterAPITests @SmokeTests', () => {
   test('valid registration returns 201 with a token and user object', async ({ apiClient }) => {

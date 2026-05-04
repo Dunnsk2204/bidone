@@ -1,5 +1,5 @@
-import { test, expect, uniqueEmail, DEFAULT_PASSWORD } from '../fixtures';
-import type { AuthResponse, ErrorResponse } from '../fixtures/types';
+import { test, expect, uniqueEmail, DEFAULT_PASSWORD } from '../Fixtures';
+import type { AuthResponse, ErrorResponse } from '../Fixtures/types';
 
 test.describe('@LoginAPITests @SmokeTests', () => {
   test('wrong password returns 401', async ({ apiClient }) => {

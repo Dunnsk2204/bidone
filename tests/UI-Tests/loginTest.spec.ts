@@ -1,6 +1,6 @@
-import { test, expect } from '../fixtures';
-import { LoginPage } from '../pages/LoginPage';
-import { NavBar } from '../pages/NavBar';
+import { test, expect } from '../Fixtures';
+import { LoginPage } from '../PageObjects/LoginPage';
+import { NavBar } from '../PageObjects/NavBar';
 import { assert } from 'console';
 
 test.describe('@LoginTests @SmokeTests', () => {

@@ -1,7 +1,7 @@
-import { test, expect } from '../fixtures';
-import { RegisterPage } from '../pages/RegisterPage';
-import { ProductsPage } from '../pages/ProductsPage';
-import { CartPage } from '../pages/CartPage';
+import { test, expect } from '../Fixtures';
+import { RegisterPage } from '../PageObjects/RegisterPage';
+import { ProductsPage } from '../PageObjects/ProductsPage';
+import { CartPage } from '../PageObjects/CartPage';
 
 test.describe('@ShoppingCartTests @SmokeTests', () => {
   test('Add a product to the cart - updates the cart count', async ({ authenticatedPage }) => {

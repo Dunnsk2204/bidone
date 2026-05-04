@@ -1,8 +1,8 @@
 import { Page } from '@playwright/test';
-import { test, expect } from '../fixtures';
-import { CartPage } from '../pages/CartPage';
-import { CheckoutPage } from '../pages/CheckoutPage';
-import { NavBar } from '../pages/NavBar';
+import { test, expect } from '../Fixtures';
+import { CartPage } from '../PageObjects/CartPage';
+import { CheckoutPage } from '../PageObjects/CheckoutPage';
+import { NavBar } from '../PageObjects/NavBar';
 
 const CHECKOUT_DETAILS = {
   name: 'End-to-End Tester',

@@ -1,7 +1,6 @@
-import { test, expect } from '../fixtures';
-import { RegisterPage } from '../pages/RegisterPage';
-import { uniqueEmail, DEFAULT_PASSWORD } from '../fixtures';
-import { NavBar } from 'pages/NavBar';
+import { test, expect, uniqueEmail, DEFAULT_PASSWORD  } from '../Fixtures';
+import { RegisterPage } from '../PageObjects/RegisterPage';
+import { NavBar } from 'PageObjects/NavBar';
 
 test.describe('@RegistrationTests @SmokeTests', () => {
   test('Valid registration logs user in', async ({ page }) => {

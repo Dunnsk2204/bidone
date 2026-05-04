@@ -1,5 +1,5 @@
-import { test, expect } from '../fixtures';
-import type { Cart, CartItem, Product } from '../fixtures/types';
+import { test, expect } from '../Fixtures/index';
+import type { Cart, CartItem, Product } from '../Fixtures/types';
 
 const PRODUCT_ID = 'p-001';
 const PRODUCT_ID_2 = 'p-002';

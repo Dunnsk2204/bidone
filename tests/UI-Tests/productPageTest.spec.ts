@@ -9,9 +9,9 @@
  *  2. Search input filters the visible product list
  */
 
-import { ProductCard } from 'pages/ProductCard';
-import { test, expect } from '../fixtures';
-import { ProductsPage } from '../pages/ProductsPage';
+import { ProductCard } from 'PageObjects/ProductCard';
+import { test, expect } from '../Fixtures';
+import { ProductsPage } from '../PageObjects/ProductsPage';
 
 test.describe('@ProductSmokeTests @SmokeTests', () => {
   test('Displays the product catalogue without authentication', async ({ page }) => {

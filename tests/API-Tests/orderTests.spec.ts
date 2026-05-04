@@ -15,8 +15,8 @@
  * cart items — the highest-risk data-integrity bugs in the app.
  */
 
-import { Order, OrderItem, OrdersResponse, Product } from 'fixtures/types';
-import { test, expect } from '../fixtures';
+import { Order, OrderItem, OrdersResponse, Product } from 'Fixtures/types';
+import { test, expect } from '../Fixtures';
 
 const PRODUCT_ID = 'p-003'; // Separate from cart tests to avoid stock conflicts
 

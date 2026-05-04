@@ -1,5 +1,5 @@
-import { test, expect } from '../fixtures';
-import type { Product } from '../fixtures/types';
+import { test, expect } from '../Fixtures';
+import type { Product } from '../Fixtures/types';
 
 const KNOWN_PRODUCT_ID = 'p-001';
 const UNKNOWN_PRODUCT_ID = 'does-not-exist-xyz';
