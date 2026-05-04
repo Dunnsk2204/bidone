@@ -1,0 +1,5 @@
+tests/node_modules/
+tests/playwright-report/
+tests/test-results/
+tests/ui/.auth/
+tests/.tsc-out/
